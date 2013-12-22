@@ -1,35 +1,35 @@
 #!/bin/bash
 # BASH SCRIPT TO SETUP RAILS DEVELOPMENT ENVIRONMENT IN UBUNTU 13.04
 
-echo "=====================================================
+echo "====================================================="
 echo "Installing dependencies"
-echo "=====================================================
+echo "====================================================="
 
 sudo apt-get -y install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libmysql-ruby libmysqlclient-dev libxml2-dev libxslt1-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
 
-echo "=====================================================
+echo "====================================================="
 echo "Installing Mysql"
-echo "=====================================================
+echo "====================================================="
 
 sudo apt-get -y install mysql-server mysql-client
 
-echo "=====================================================
+echo "====================================================="
 echo "Installing RVM"
-echo "=====================================================
+echo "====================================================="
 
 curl -L https://get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
 echo "source ~/.rvm/scripts/rvm" >> ~/.bashrc
 
-echo "=====================================================
+echo "====================================================="
 echo "Installing Ruby"
-echo "=====================================================
+echo "====================================================="
 
 rvm install 2.0.0-p353
 rvm use 2.0.0-p353 --default
 
-echo "=====================================================
+echo "====================================================="
 echo "Installing Rails"
-echo "=====================================================
+echo "====================================================="
 
 gem install rails
