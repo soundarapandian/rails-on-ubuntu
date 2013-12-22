@@ -1,6 +1,5 @@
 #!/bin/bash
-# BASH SCRIPT TO SETUP RAILS DEVELOPMENT ENVIRONMENT IN UBUNTU
-# TESTED IN UBUNTU 13.04
+# BASH SCRIPT TO SETUP RAILS DEVELOPMENT ENVIRONMENT IN UBUNTU 13.04
 
 echo "=====================================================
 echo "Installing dependencies"
