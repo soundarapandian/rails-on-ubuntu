@@ -1,11 +1,11 @@
 #!/bin/bash
-# BASH SCRIPT TO SETUP RAILS DEVELOPMENT ENVIRONMENT IN UBUNTU 13.04
+# BASH SCRIPT TO SETUP RAILS DEVELOPMENT ENVIRONMENT IN UBUNTU 13.04,14.04
 
 echo "====================================================="
 echo "Installing dependencies"
 echo "====================================================="
 
-sudo apt-get -y install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libmysql-ruby libmysqlclient-dev libxml2-dev libxslt1-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
+sudo apt-get -y install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libmysqlclient-dev libxml2-dev libxslt1-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
 
 echo "====================================================="
 echo "Installing Mysql"
@@ -18,15 +18,15 @@ echo "Installing RVM"
 echo "====================================================="
 
 curl -L https://get.rvm.io | bash -s stable
-source ~/.rvm/scripts/rvm
 echo "source ~/.rvm/scripts/rvm" >> ~/.bashrc
+source ~/.bashrc
 
 echo "====================================================="
 echo "Installing Ruby"
 echo "====================================================="
 
-rvm install 2.0.0-p353
-rvm use 2.0.0-p353 --default
+rvm install 2.1.2
+rvm use 2.1.2 --default
 
 echo "====================================================="
 echo "Installing Rails"
